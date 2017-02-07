@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SettleFramework.Models.PaymentRequest>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestedEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestedPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestFromNickName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestFromFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestFromLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestFromAddress1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestFromAddress2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestedEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestedPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestFromNickName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestFromFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestFromLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestFromAddress1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestFromAddress2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RequestID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RequestID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RequestID })
+        </td>
+    </tr>
+}
+
+</table>

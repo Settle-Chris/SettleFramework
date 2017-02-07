@@ -8,6 +8,9 @@ namespace SettleFramework.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Display(Name = "I agree to what the lawyers say")]
+        public bool AgreeLegal { get; set; }
     }
 
     public class ExternalLoginListViewModel

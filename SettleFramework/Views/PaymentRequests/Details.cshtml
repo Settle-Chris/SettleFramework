@@ -1,0 +1,90 @@
+﻿@model SettleFramework.Models.PaymentRequest
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PaymentRequest</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestedEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestedEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestedPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestedPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestFromNickName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestFromNickName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestFromFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestFromFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestFromLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestFromLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestFromAddress1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestFromAddress1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestFromAddress2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestFromAddress2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RequestID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

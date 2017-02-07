@@ -54,15 +54,15 @@ namespace SettleFramework
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "FacebookAppId",
+               appSecret: "FacebookAppSecret");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "GoogleClientID",
+                ClientSecret = "GoogleClientSecret"
+            });
         }
     }
 }
